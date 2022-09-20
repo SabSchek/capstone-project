@@ -1,14 +1,36 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
-export default function Home() {
-  return (
-    <div>
-     <Button>Click me!</Button>
-    </div>
-  )
+const goods = [
+  'Stuhl',
+  'Kleid',
+  'Fahrrad',
+  'Buch',
+  'iPhone',
+  'Küchenmaschine',
+  'Autoradio',
+  'Spielzeug',
+  'Babybett',
+  'Drucker',
+  'Schrank',
+  'Pizzaroller',
+];
+
+function goodItem({ good }) {
+  return <li>{good}</li>;
 }
 
-const Button = styled.button`
-background: yellow;
-color: purple;
-`;
+function Home({ good }) {
+  return (
+    <div>
+      <h1>List of goods</h1>
+      <ul>{goods.map(good)(<goodItem key={good} good={good} />)}</ul>
+    </div>
+  );
+}
+
+export default Home;
+
+// const Button = styled.button`
+//   background: yellow;
+//   color: purple;
+// `;
