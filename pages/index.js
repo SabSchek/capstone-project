@@ -15,15 +15,28 @@ const goods = [
   'Pizzaroller',
 ];
 
-function goodItem({ good }) {
-  return <li>{good}</li>;
-}
+// function goodItem({ good }) {
+//   return <li>{goods}</li>;
+// }
 
 function Home({ good }) {
   return (
-    <div>
+    <div className="listGoods">
       <h1>List of goods</h1>
-      <ul>{goods.map(good)(<goodItem key={good} good={good} />)}</ul>
+      <ul>
+        <li>Stuhl</li>
+        <li>Kleid</li>
+        <li>Fahrrad</li>
+        <li>Buch</li>
+        <li>iPhone</li>
+        <li>Küchenmaschine</li>
+        <li>Autoradio</li>
+        <li>Spielzeug</li>
+        <li>Babybett</li>
+        <li>Drucken</li>
+        <li>Schrank</li>
+        <li>Pizzaroller</li>
+      </ul>
     </div>
   );
 }
