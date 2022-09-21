@@ -1,14 +1,49 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
-export default function Home() {
+const goods = [
+  'Stuhl',
+  'Kleid',
+  'Fahrrad',
+  'Buch',
+  'iPhone',
+  'Küchenmaschine',
+  'Autoradio',
+  'Spielzeug',
+  'Babybett',
+  'Drucker',
+  'Schrank',
+  'Pizzaroller',
+];
+
+// function goodItem({ good }) {
+//   return <li>{goods}</li>;
+// }
+
+function Home({ good }) {
   return (
-    <div>
-     <Button>Click me!</Button>
+    <div className="listGoods">
+      <h1>List of goods</h1>
+      <ul>
+        <li>Stuhl</li>
+        <li>Kleid</li>
+        <li>Fahrrad</li>
+        <li>Buch</li>
+        <li>iPhone</li>
+        <li>Küchenmaschine</li>
+        <li>Autoradio</li>
+        <li>Spielzeug</li>
+        <li>Babybett</li>
+        <li>Drucken</li>
+        <li>Schrank</li>
+        <li>Pizzaroller</li>
+      </ul>
     </div>
-  )
+  );
 }
 
-const Button = styled.button`
-background: yellow;
-color: purple;
-`;
+export default Home;
+
+// const Button = styled.button`
+//   background: yellow;
+//   color: purple;
+// `;
