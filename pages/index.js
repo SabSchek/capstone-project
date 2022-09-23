@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Categories from '../Components/Categories';
 
 const goods = [
   'Stuhl',
@@ -21,23 +22,27 @@ const goods = [
 
 function Home({ good }) {
   return (
-    <div className="listGoods">
-      <h1>List of goods</h1>
-      <ul>
-        <li>Stuhl</li>
-        <li>Kleid</li>
-        <li>Fahrrad</li>
-        <li>Buch</li>
-        <li>iPhone</li>
-        <li>Küchenmaschine</li>
-        <li>Autoradio</li>
-        <li>Spielzeug</li>
-        <li>Babybett</li>
-        <li>Drucken</li>
-        <li>Schrank</li>
-        <li>Pizzaroller</li>
-      </ul>
-    </div>
+    <>
+      <Categories />
+
+      <div className="listGoods">
+        <h2>List of goods</h2>
+        <ul>
+          <li>Stuhl</li>
+          <li>Kleid</li>
+          <li>Fahrrad</li>
+          <li>Buch</li>
+          <li>iPhone</li>
+          <li>Küchenmaschine</li>
+          <li>Autoradio</li>
+          <li>Spielzeug</li>
+          <li>Babybett</li>
+          <li>Drucken</li>
+          <li>Schrank</li>
+          <li>Pizzaroller</li>
+        </ul>
+      </div>
+    </>
   );
 }
 
