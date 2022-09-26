@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export default function Categories() {
   return (
-    <>
-      <CatBody>
+    <CatBody>
+      <nav>
         <h1>Kategorien</h1>
         <a>Kind</a>
         <a>Auto</a>
@@ -14,10 +14,10 @@ export default function Categories() {
         <a>Elektronik</a>
         <a>Musik</a>
         <a>Filme</a>
-      </CatBody>
-    </>
+      </nav>
+    </CatBody>
   );
 }
-const CatBody = styled.div`
-  background-color: blueviolet;
+const CatBody = styled.nav`
+  background-color: lavender;
 `;

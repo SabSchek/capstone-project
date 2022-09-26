@@ -20,11 +20,10 @@ const goods = [
 //   return <li>{goods}</li>;
 // }
 
-function Home({ good }) {
+function Home() {
   return (
     <>
       <Categories />
-
       <div className="listGoods">
         <h2>List of goods</h2>
         <ul>
