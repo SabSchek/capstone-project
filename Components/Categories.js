@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Ellipse from '../Assets/Ellipse1.svg';
+import Ellipse from '../public/assets/ellipse1.svg';
 import Image from 'next/image';
 
 export default function Categories() {

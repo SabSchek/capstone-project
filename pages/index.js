@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Categories from '../Components/Categories';
 import Header from '../Components/Header';
-import Ellipse from '../Assets/Ellipse1.svg';
+import Ellipse from '../public/assets/ellipse1.svg';
 import Image from 'next/image';
 
 const goods = [
