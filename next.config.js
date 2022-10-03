@@ -6,15 +6,14 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-};
-
-module.exports = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**.ebay-kleinanzeigen.de/',
+        hostname: 'img.ebay-kleinanzeigen.de',
       },
     ],
   },
 };
+
+module.exports = nextConfig;

@@ -1,19 +1,23 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  * {
+  /* * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-  border-radius: 30px;
+  border-radius: 30px; width: 390px;
+  height: 844px;
     
-  }
+  } */
+
 
   body {
     font-family: 'Roboto', sans-serif;
-    border: 5px solid black;
-  max-width: 390px;
-  max-height: 844px;
-    padding: 2w;
+
+  width: 375px;
+  height: 667px;
+  margin:0;
+  padding: 0;
+
   }
 `;
 

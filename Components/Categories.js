@@ -1,6 +1,17 @@
 import styled from 'styled-components';
 import Ellipse from '../public/assets/ellipse1.svg';
 import Image from 'next/image';
+import Link from 'next/link';
+
+export const categoryList = [
+  { name: 'Kleidung', id: 'kleidung' },
+  { name: 'Auto', id: 'auto' },
+  { name: 'Raeder', id: 'raeder' },
+  { name: 'Tiere', id: 'tierchen' },
+  { name: 'Media', id: 'multimedia' },
+  { name: 'Home', id: 'home' },
+  { name: 'Buecher', id: 'buecher' },
+];
 
 export default function Categories() {
   return (
@@ -8,56 +19,48 @@ export default function Categories() {
       <DivContainer>
         <Image src={Ellipse} width={40} height={65} />
       </DivContainer>
+
       <nav>
-        <Nav>In welche richtung soll es gehen?</Nav>
-        <Category>Kind</Category>
-        <Category>Auto</Category>
-        <Category>Haus</Category>
-        <Category>Haustiere</Category>
-        <Category>Elektronik</Category>
-        <Category>Musik</Category>
-        <Category>Filme</Category>
+        <p>In welche richtung soll es gehen?</p>
+        {categoryList.map((categoryPoint) => (
+          <p key={categoryPoint.id}>
+            <>
+              <Link href={`/category/${categoryPoint.name}`}>
+                <Button>
+                  <a>{categoryPoint.name}</a>
+                </Button>
+              </Link>
+            </>
+          </p>
+        ))}
       </nav>
     </CatBody>
   );
 }
 const CatBody = styled.nav`
-  width: 390px;
   font-size: 16px;
-  color: white;
   display: flex;
+  flex-direction: column;
   border-bottom-right-radius: 30px;
   font-variant: small-caps;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  display: flex;
-  position: absolute;
-  background-color: grey;
-  width: 390px;
-`;
-
-const Category = styled.button`
-  margin: 5px;
-  border-radius: 7px;
-  border-color: rosybrown;
-  color: rosybrown;
-  border-style: dotted;
-  letter-spacing: 0.15rem;
-  transition: all 0.3s;
-`;
-
-const Nav = styled.h2`
-  margin: 5px;
-  color: white;
-  font-variant: small-caps;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: right;
-  padding: 20px;
+  background-color: #d9d9d9;
+  height: 100px;
 `;
 
 const DivContainer = styled.div`
   margin: 10px;
-  size: 10px;
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 30 px;
+  display: flex;
+`;
+
+const Button = styled.button`
+  border-radius: 7px;
+  border-color: rosybrown;
+  color: #8d8080;
+  border-style: dotted;
+  width: 60px;
+  margin: 5px;
+  text-align: center;
 `;
