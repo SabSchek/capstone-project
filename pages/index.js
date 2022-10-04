@@ -7,32 +7,25 @@ import ItemFrame from '../Components/ItemFrame';
 
 function Home() {
   return (
-    <>
-      <AppBody>
-        <Header>
-          <h1>Donatella</h1>
-        </Header>
-        <Categories />
-        <UlContainer>
-          {goods.map((good) => {
-            console.log(good);
-            return (
-              <DivFrame key={good.id}>
-                <ImageStyle>
-                  <Image
-                    alt="Produkt"
-                    src={good.images}
-                    width={60}
-                    height={70}
-                  />
-                </ImageStyle>
-                <ItemFrame key={good.id} name={good.name} price={good.price} />
-              </DivFrame>
-            );
-          })}
-        </UlContainer>
-      </AppBody>
-    </>
+    <AppBody>
+      <Header>
+        <h1>Donatella</h1>
+      </Header>
+      <Categories />
+      <UlContainer>
+        {goods.map((good) => {
+          console.log(good);
+          return (
+            <DivFrame key={good.id}>
+              <ImageStyle>
+                <Image alt="Produkt" src={good.images} width={60} height={70} />
+              </ImageStyle>
+              <ItemFrame key={good.id} name={good.name} price={good.price} />
+            </DivFrame>
+          );
+        })}
+      </UlContainer>
+    </AppBody>
   );
 }
 
