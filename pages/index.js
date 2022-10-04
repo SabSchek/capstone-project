@@ -17,7 +17,7 @@ function Home() {
           {goods.map((good) => {
             console.log(good);
             return (
-              <DivFrame>
+              <DivFrame key={good.id}>
                 <ImageStyle>
                   <Image
                     alt="Produkt"

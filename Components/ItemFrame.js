@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import { goods } from '../pages/filter';
+import DivFrame from '../pages/index';
+import ImageStyle from '../pages/index';
+import Image from 'next/image';
 
 function ItemFrame({ name, price }) {
   return (

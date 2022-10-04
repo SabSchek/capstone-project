@@ -16,9 +16,11 @@ export const categoryList = [
 export default function Categories() {
   return (
     <CatNav>
-      <DivContainer>
-        <Image src={Ellipse} width={40} height={50} />
-      </DivContainer>
+      <Link href="/index">
+        <DivContainer>
+          <Image src={Ellipse} width={40} height={50} />
+        </DivContainer>
+      </Link>
 
       {categoryList.map((categoryPoint) => (
         <p key={categoryPoint.id}>
