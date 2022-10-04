@@ -6,61 +6,59 @@ import Link from 'next/link';
 export const categoryList = [
   { name: 'Kleidung', id: 'kleidung' },
   { name: 'Auto', id: 'auto' },
-  { name: 'Raeder', id: 'raeder' },
+  { name: 'Rad', id: 'raeder' },
   { name: 'Tiere', id: 'tierchen' },
   { name: 'Media', id: 'multimedia' },
   { name: 'Home', id: 'home' },
-  { name: 'Buecher', id: 'buecher' },
+  { name: 'Bücher', id: 'buecher' },
 ];
 
 export default function Categories() {
   return (
-    <CatBody>
+    <CatNav>
       <DivContainer>
-        <Image src={Ellipse} width={40} height={65} />
+        <Image src={Ellipse} width={40} height={50} />
       </DivContainer>
 
-      <nav>
-        <p>In welche richtung soll es gehen?</p>
-        {categoryList.map((categoryPoint) => (
-          <p key={categoryPoint.id}>
-            <>
-              <Link href={`/category/${categoryPoint.name}`}>
-                <Button>
-                  <a>{categoryPoint.name}</a>
-                </Button>
-              </Link>
-            </>
-          </p>
-        ))}
-      </nav>
-    </CatBody>
+      {categoryList.map((categoryPoint) => (
+        <p key={categoryPoint.id}>
+          <>
+            <Link href={`/category/${categoryPoint.name}`}>
+              <CatLink>{categoryPoint.name}</CatLink>
+            </Link>
+          </>
+        </p>
+      ))}
+    </CatNav>
   );
 }
-const CatBody = styled.nav`
+const CatNav = styled.nav`
   font-size: 16px;
   display: flex;
-  flex-direction: column;
-  border-bottom-right-radius: 30px;
-  font-variant: small-caps;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #d9d9d9;
-  height: 100px;
+  flex-direction: row;
+  background-color: #8d8080;
+  height: 38px;
+  max-width: 375px;
+  padding-bottom: 4px;
 `;
 
 const DivContainer = styled.div`
   margin: 10px;
   width: 80px;
-  height: 30 px;
+  height: 30px;
   display: flex;
+  height: 60px;
 `;
 
-const Button = styled.button`
-  border-radius: 7px;
-  border-color: rosybrown;
-  color: #8d8080;
-  border-style: dotted;
-  width: 60px;
+const CatLink = styled.a`
+  box-shadow: 1px 2px 3px;
+  border-radius: 20px;
+  border-color: white;
+  font-size: 10px;
+  color: black;
+  background-color: lightgray;
+  border-style: solid;
   margin: 5px;
   text-align: center;
+  padding: 3px;
 `;

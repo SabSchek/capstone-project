@@ -8,7 +8,7 @@ export const goods = [
     category: 'Home',
   },
   {
-    name: 'Kleid',
+    name: 'Set Leggins',
     id: '2',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/e5/e5e01e13-f598-4991-8616-7e306c9e1595?rule=$_59.JPG',
@@ -40,7 +40,7 @@ export const goods = [
     category: 'Media',
   },
   {
-    name: 'Küchenmaschine',
+    name: 'Mixer',
     id: '6',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/52/529f768c-34b5-4c0b-b56c-ed20fd7c87d6?rule=$_59.JPG',
@@ -59,8 +59,9 @@ export const goods = [
     name: 'Sommerkleid',
     id: '8',
     images:
-      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/e5/e5e01e13-f598-4991-8616-7e306c9e1595?rule=$_59.JPG',
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: 15,
+
     category: 'Kleidung',
   },
 ];

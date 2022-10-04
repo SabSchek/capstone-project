@@ -10,13 +10,16 @@ const GlobalStyle = createGlobalStyle`
   } */
 
 
+
+
   body {
     font-family: 'Roboto', sans-serif;
 
-  width: 375px;
-  height: 667px;
+  max-width: 375px;
+  max-height: 667px;
   margin:0;
   padding: 0;
+
 
   }
 `;

@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { useRouter } from 'next/router.js';
 import categoryList from '../../Components/Categories.js';
 import { goods } from '../filter.js';
+import Header from '../../Components/Header.js';
+import Categories from '../../Components/Categories.js';
 
 // export async function getSeverSideProbs(context) {
 //   const { id } = context.params;
@@ -15,9 +17,13 @@ export default function DetailPage() {
 
   return (
     <>
-      <TitleH1>
-        <h1>{name}</h1>
-      </TitleH1>
+      <Header>
+        <h1>Donatella</h1>
+      </Header>
+      <Categories />
+
+      <h2>{name}</h2>
+
       {filteredGoods.map((good) => {
         return <p key={good.id}>{good.name}</p>;
       })}
@@ -25,8 +31,8 @@ export default function DetailPage() {
   );
 }
 
-const TitleH1 = styled.div`
-  background-color: blue;
+const TitleH2 = styled.div`
+  background-color: hotpink;
   margin: 0;
   padding: 0;
   width: 375px;

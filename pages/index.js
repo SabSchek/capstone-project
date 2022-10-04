@@ -1,45 +1,36 @@
 import styled from 'styled-components';
 import Categories from '../Components/Categories';
 import Header from '../Components/Header';
-import Ellipse from '../public/assets/ellipse1.svg';
 import Image from 'next/image';
 import { goods } from '../pages/filter';
-import Car
+import ItemFrame from '../Components/ItemFrame';
 
 function Home() {
   return (
     <>
       <AppBody>
         <Header>
-          <div>
-            <Image src={Ellipse} width={35} height={60} />
-          </div>
           <h1>Donatella</h1>
         </Header>
         <Categories />
-
-        <>
-          <ListContainer>
-            <CardContainer>
-              {goods.map((good) => {
-                console.log(good);
-                return (
-                  <>
-                    <
-                    <li key={good.id}>{good.name}</li>
-
-                    <Image
-                      alt="Produkt"
-                      src={good.images}
-                      width={50}
-                      height={60}
-                    />
-                  </>
-                );
-              })}
-            </CardContainer>
-          </ListContainer>
-        </>
+        <UlContainer>
+          {goods.map((good) => {
+            console.log(good);
+            return (
+              <DivFrame>
+                <ImageStyle>
+                  <Image
+                    alt="Produkt"
+                    src={good.images}
+                    width={60}
+                    height={70}
+                  />
+                </ImageStyle>
+                <ItemFrame key={good.id} name={good.name} price={good.price} />
+              </DivFrame>
+            );
+          })}
+        </UlContainer>
       </AppBody>
     </>
   );
@@ -48,20 +39,33 @@ function Home() {
 export default Home;
 
 const AppBody = styled.div`
-  background-color: #d9d9d9;
+  background-color: #596f80;
   margin: 0;
   padding: 0;
   width: 375px;
   height: 667px;
 `;
 
-const ListContainer = styled.div`
+const UlContainer = styled.ul`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-`;
-
-const CardContainer = styled.div`
+  grid-template-columns: 1fr 1fr;
   list-style: none;
   text-align: center;
-  grid-column: span 6;
+  gap: 5px;
+`;
+
+const DivFrame = styled.div`
+  display: flex;
+  border: solid coral;
+  background-color: white;
+  height: 100px;
+  width: 150px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+`;
+
+const ImageStyle = styled.div`
+  display: flex;
+  flex-direction: top;
+  border-radius: 50px;
 `;
