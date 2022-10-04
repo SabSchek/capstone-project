@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Categories from '../Components/Categories';
 import Header from '../Components/Header';
 import Image from 'next/image';
-import { goods } from '../pages/filter';
+import { goods } from '../data/filter';
 import ItemFrame from '../Components/ItemFrame';
 
 function Home() {

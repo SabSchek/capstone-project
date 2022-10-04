@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router.js';
 import categoryList from '../../Components/Categories.js';
-import { goods } from '../filter.js';
+import { goods } from '../../data/filter.js';
 import Header from '../../Components/Header.js';
 import Categories from '../../Components/Categories.js';
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { goods } from '../pages/filter';
+import { goods } from '../data/filter';
 import DivFrame from '../pages/index';
 import ImageStyle from '../pages/index';
 import Image from 'next/image';

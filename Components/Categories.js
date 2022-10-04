@@ -16,7 +16,7 @@ export const categoryList = [
 export default function Categories() {
   return (
     <CatNav>
-      <Link href="/index">
+      <Link href="/">
         <DivContainer>
           <Image src={Ellipse} width={40} height={50} />
         </DivContainer>
