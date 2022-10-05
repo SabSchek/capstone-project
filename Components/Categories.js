@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Ellipse from '../public/assets/ellipse1.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+import BookMarkBlue from '../public/assets/BookMarkBlue.svg';
 
 export const categoryList = [
   { name: 'Kleidung', id: 'kleidung' },
@@ -18,7 +19,7 @@ export default function Categories() {
     <CatNav>
       <Link href="/">
         <DivContainer>
-          <Image src={Ellipse} width={40} height={50} />
+          <Image src={Ellipse} width={60} height={80} />
         </DivContainer>
       </Link>
 
@@ -31,6 +32,9 @@ export default function Categories() {
           </>
         </p>
       ))}
+      <BookmarkContainer>
+        <Image src={BookMarkBlue} width={50} height={50} />
+      </BookmarkContainer>
     </CatNav>
   );
 }
@@ -45,18 +49,27 @@ const CatNav = styled.nav`
 `;
 
 const DivContainer = styled.div`
-  margin: 10px;
+  margin: 1px;
+  padding-top: 0.5rem;
   width: 80px;
   height: 30px;
   display: flex;
   height: 60px;
 `;
 
+const BookmarkContainer = styled.div`
+  margin: 3px;
+  padding-top: 0.5rem;
+  width: 80px;
+  height: 45px;
+  display: flex;
+`;
+
 const CatLink = styled.a`
   box-shadow: 1px 2px 3px;
   border-radius: 20px;
   border-color: white;
-  font-size: 10px;
+  font-size: 8px;
   color: black;
   background-color: lightgray;
   border-style: solid;
