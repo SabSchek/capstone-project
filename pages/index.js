@@ -12,6 +12,7 @@ function Home() {
         <h1>Donatella</h1>
       </Header>
       <Categories />
+
       <UlContainer>
         {goods.map((good) => {
           console.log(good);
@@ -55,10 +56,12 @@ const DivFrame = styled.div`
   width: 150px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  justify-self: left;
 `;
 
 const ImageStyle = styled.div`
   display: flex;
-  flex-direction: top;
-  border-radius: 50px;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
 `;
