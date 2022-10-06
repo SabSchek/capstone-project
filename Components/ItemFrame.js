@@ -1,17 +1,17 @@
 import styled from 'styled-components';
-import { goods } from '../data/filter';
-import DivFrame from '../pages/index';
-import ButtonBookmark from './ButtonBookmark';
+import Bookmark from '../Components/ButtonBookmark';
 
-function ItemFrame({ name, price }) {
+function ItemFrame({ name, price, id }) {
   return (
     <>
       <FrameList>
         <Title>{name}</Title>
         <Price>{price}</Price>
-        <Button variant="primary">get it</Button>
+        <Link href={`/itempages/${id}`} passHref>
+          <Button>get it</Button>
+        </Link>
       </FrameList>
-      <ButtonBookmark />
+      <Bookmark />
     </>
   );
 }
@@ -30,6 +30,7 @@ const Title = styled.h6`
 
 const Price = styled.p`
   font-size: 12px;
+  font-style: italic;
   color: green;
 `;
 
@@ -50,3 +51,5 @@ const FrameList = styled.li`
   justify-items: center;
   justify-content: center;
 `;
+
+const Link = styled.a``;

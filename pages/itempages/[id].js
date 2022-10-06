@@ -1,17 +1,14 @@
+import styled from 'styled-components';
 import { useRouter } from 'next/router.js';
 import { goods } from '../../data/filter.js';
 import Header from '../../Components/Header.js';
 import Categories from '../../Components/Categories.js';
 
-// export async function getSeverSideProbs(context) {
-//   const { id } = context.params;
-// }
-
-export default function DetailPage() {
+export default function ItemPage() {
   const router = useRouter();
-  const { name } = router.query;
+  const { id } = router.query;
 
-  const filteredGoods = goods.filter((good) => good.category === name);
+  const findGoods = goods.find((good) => good.id === id);
 
   return (
     <>
@@ -19,13 +16,10 @@ export default function DetailPage() {
         <h1>Donatella</h1>
       </Header>
       <Categories />
-
-      <h2>{name}</h2>
-
-      {filteredGoods.map((good) => {
+      <ItemPage />
+      {findGoods.map((good) => {
         return <p key={good.id}>{good.name}</p>;
       })}
     </>
   );
 }
-console.log(filteredGoods);
