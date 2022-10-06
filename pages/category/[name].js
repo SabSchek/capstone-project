@@ -28,4 +28,3 @@ export default function DetailPage() {
     </>
   );
 }
-console.log(filteredGoods);

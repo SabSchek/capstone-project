@@ -3,7 +3,7 @@ import { useRouter } from 'next/router.js';
 import { goods } from '../../data/filter.js';
 import Header from '../../Components/Header.js';
 import Categories from '../../Components/Categories.js';
-
+import ItemFrame from '../../Components/ItemFrame.js';
 export default function ItemPage() {
   const router = useRouter();
   const { id } = router.query;
@@ -16,9 +16,8 @@ export default function ItemPage() {
         <h1>Donatella</h1>
       </Header>
       <Categories />
-      <ItemPage />
       {findGoods.map((good) => {
-        return <p key={good.id}>{good.name}</p>;
+        return <p key={good.id}>{good.id}</p>;
       })}
     </>
   );
