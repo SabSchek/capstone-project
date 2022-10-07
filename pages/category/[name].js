@@ -11,7 +11,7 @@ export default function DetailPage() {
   const router = useRouter();
   const { name } = router.query;
 
-  const filteredGoods = goods.filter((good) => good.category === name);
+  const filteredGoods = goods.filter((good) => good.category === good.name);
 
   return (
     <>
@@ -23,7 +23,7 @@ export default function DetailPage() {
       <h2>{name}</h2>
 
       {filteredGoods.map((good) => {
-        return <p key={good.id}>{good.name}</p>;
+        return <p key={good.id}>{goods.name}</p>;
       })}
     </>
   );

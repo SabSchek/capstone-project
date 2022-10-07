@@ -8,7 +8,7 @@ export default function ItemPage() {
   const router = useRouter();
   const { id } = router.query;
 
-  const findGoods = goods.find((good) => good.id === id);
+  const findGoods = findGoods((good) => good.id === id);
 
   return (
     <>
@@ -16,7 +16,8 @@ export default function ItemPage() {
         <h1>Donatella</h1>
       </Header>
       <Categories />
-      {findGoods.map((good) => {
+      <ItemFrame />
+      {find.goods((good) => {
         return <p key={good.id}>{good.id}</p>;
       })}
     </>
