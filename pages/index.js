@@ -21,7 +21,12 @@ function Home() {
               <ImageStyle>
                 <Image alt="Produkt" src={good.images} width={60} height={70} />
               </ImageStyle>
-              <ItemFrame key={good.id} name={good.name} price={good.price} />
+              <ItemFrame
+                key={good.id}
+                name={good.name}
+                price={good.price}
+                id={good.id}
+              />
             </DivFrame>
           );
         })}

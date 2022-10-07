@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { useRouter } from 'next/router.js';
 import { goods } from '../../data/filter.js';
 import Header from '../../Components/Header.js';
@@ -11,7 +12,7 @@ export default function DetailPage() {
   const router = useRouter();
   const { name } = router.query;
 
-  const filteredGoods = goods.filter((good) => good.category === good.name);
+  const filteredGoods = goods.filter((good) => good.category === name);
 
   return (
     <>

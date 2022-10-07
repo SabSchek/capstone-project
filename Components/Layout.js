@@ -10,7 +10,7 @@ export default function Layout({ children }) {
   );
 }
 
-// const main = styled.div`
+// const Main = styled.div`
 //   background-color: #596f80;
 //   margin: 0;
 //   padding: 0;
