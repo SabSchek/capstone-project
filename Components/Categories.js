@@ -25,11 +25,9 @@ export default function Categories() {
 
       {categoryList.map((categoryPoint) => (
         <p key={categoryPoint.id}>
-          <>
-            <Link href={`/category/${categoryPoint.name}`}>
-              <CatLink>{categoryPoint.name}</CatLink>
-            </Link>
-          </>
+          <Link href={`/category/${categoryPoint.name}`}>
+            <CatLink>{categoryPoint.name}</CatLink>
+          </Link>
         </p>
       ))}
       <BookmarkContainer>
@@ -43,8 +41,8 @@ const CatNav = styled.nav`
   display: flex;
   flex-direction: row;
   background-color: #8d8080;
-  height: 38px;
-  max-width: 375px;
+  height: 4.3vh;
+  width: 100vw;
   padding-bottom: 4px;
 `;
 

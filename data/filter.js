@@ -64,6 +64,60 @@ export const goods = [
 
     category: 'Kleidung',
   },
+  {
+    name: 'Sommerkleid',
+    id: '8',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
+    price: '15€',
+
+    category: 'Kleidung',
+  },
+  {
+    name: 'Sommerkleid',
+    id: '8',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
+    price: '15€',
+
+    category: 'Kleidung',
+  },
+  {
+    name: 'Sommerkleid',
+    id: '8',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
+    price: '15€',
+
+    category: 'Kleidung',
+  },
+  {
+    name: 'Sommerkleid',
+    id: '8',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
+    price: '15€',
+
+    category: 'Kleidung',
+  },
+  {
+    name: 'Sommerkleid',
+    id: '8',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
+    price: '15€',
+
+    category: 'Kleidung',
+  },
+  {
+    name: 'Sommerkleid',
+    id: '8',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
+    price: '15€',
+
+    category: 'Kleidung',
+  },
 ];
 
 // const [chosenCategory, setChosenCategory] = useState(null);

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import Categories from '../Components/Categories';
-import Header from '../Components/Header';
 import Image from 'next/image';
 import { goods } from '../data/filter';
 import ItemFrame from '../Components/ItemFrame';
+import Header from '../Components/Header';
 
 function Home() {
   return (
@@ -15,7 +15,6 @@ function Home() {
 
       <UlContainer>
         {goods.map((good) => {
-          console.log(good);
           return (
             <DivFrame key={good.id}>
               <ImageStyle>
@@ -41,8 +40,8 @@ const AppBody = styled.div`
   background-color: #596f80;
   margin: 0;
   padding: 0;
-  width: 375px;
-  height: 667px;
+  width: 100vw;
+  height: 100vh;
 `;
 
 const UlContainer = styled.ul`
@@ -57,8 +56,8 @@ const DivFrame = styled.div`
   display: flex;
   border: solid coral;
   background-color: white;
-  height: 100px;
-  width: 150px;
+  height: 15vh;
+  width: 40vw;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   justify-self: left;

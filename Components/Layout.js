@@ -5,15 +5,15 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <Main>{children}</Main>
     </>
   );
 }
 
-// const Main = styled.div`
-//   background-color: #596f80;
-//   margin: 0;
-//   padding: 0;
-//   width: 375px;
-//   height: 667px;
-// `;
+const Main = styled.main`
+  background-color: #596f80;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+`;
