@@ -1,36 +1,38 @@
 import styled from 'styled-components';
-import Categories from '../Components/Categories';
 import Image from 'next/image';
 import { goods } from '../data/filter';
 import ItemFrame from '../Components/ItemFrame';
-import Header from '../Components/Header';
+import HeaderNav from '../Components/HeaderNav';
 
 function Home() {
   return (
-    <AppBody>
-      <Header>
-        <h1>Donatella</h1>
-      </Header>
-      <Categories />
-
-      <UlContainer>
-        {goods.map((good) => {
-          return (
-            <DivFrame key={good.id}>
-              <ImageStyle>
-                <Image alt="Produkt" src={good.images} width={60} height={70} />
-              </ImageStyle>
-              <ItemFrame
-                key={good.id}
-                name={good.name}
-                price={good.price}
-                id={good.id}
-              />
-            </DivFrame>
-          );
-        })}
-      </UlContainer>
-    </AppBody>
+    <>
+      <HeaderNav />
+      <AppBody>
+        <UlContainer>
+          {goods.map((good) => {
+            return (
+              <DivFrame key={good.id}>
+                <ItemFrame
+                  key={good.id}
+                  name={good.name}
+                  price={good.price}
+                  id={good.id}
+                />
+                <ImageStyle>
+                  <Image
+                    alt="Produkt"
+                    src={good.images}
+                    width={60}
+                    height={70}
+                  />
+                </ImageStyle>
+              </DivFrame>
+            );
+          })}
+        </UlContainer>
+      </AppBody>
+    </>
   );
 }
 
@@ -56,6 +58,7 @@ const DivFrame = styled.div`
   display: flex;
   border: solid coral;
   background-color: white;
+  box-shadow: black;
   height: 15vh;
   width: 40vw;
   border-bottom-left-radius: 20px;

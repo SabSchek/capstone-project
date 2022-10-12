@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { useRouter } from 'next/router.js';
 import { goods } from '../../data/filter.js';
-import Header from '../../Components/Header.js';
-import Categories from '../../Components/Categories.js';
+import HeaderNav from '../../Components/HeaderNav.js';
 import Image from 'next/image.js';
 
 export default function ItemPage() {
@@ -12,23 +11,22 @@ export default function ItemPage() {
   const foundGood = goods.find((good) => good.id === id);
 
   return (
-    <AppBody>
-      <Header>
-        <h1>Donatella</h1>
-      </Header>
-      <Categories />
-      <PageItemFrame>
-        <h2>{foundGood?.name}</h2>
-        <Image
-          alt=""
-          src={foundGood?.images}
-          layout="responsive"
-          width={20}
-          height={20}
-        />
-        <p>{foundGood?.price}</p>
-      </PageItemFrame>
-    </AppBody>
+    <>
+      <HeaderNav />
+      <AppBody>
+        <PageItemFrame>
+          <h2>{foundGood?.name}</h2>
+          <Image
+            alt=""
+            src={foundGood?.images}
+            layout="responsive"
+            width={20}
+            height={20}
+          />
+          <p>{foundGood?.price}</p>
+        </PageItemFrame>
+      </AppBody>
+    </>
   );
 }
 

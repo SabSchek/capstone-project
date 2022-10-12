@@ -2,9 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
+* {
 
-
-
+}
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #596f80;
@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
 
 
   }
+
+  
 `;
 
 export default GlobalStyle;
