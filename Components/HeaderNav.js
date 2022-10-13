@@ -40,13 +40,13 @@ export default function HeaderNav() {
 
 const HeaderundNav = styled.div`
   z-index: 1;
-  height: 74px;
-  background-color: #484154;
+  height: 120 px;
+  background-color: #374c68;
   width: 100%;
   font-size: 16px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
-  grid-template-rows: 4;
+  grid-template-rows: 60% 40%;
   padding-bottom: 4px;
   position: fixed;
   top: 0;
@@ -67,7 +67,7 @@ const BookmarkContainer = styled.div`
   padding-top: 0.5rem;
   width: 80px;
   height: 45px;
-  grid-row: 2 / 4;
+  grid-row: 2 / 3;
   grid-column: 9;
 `;
 
@@ -81,18 +81,18 @@ const CatLink = styled.a`
   border-style: solid;
   margin: 5px;
   text-align: center;
-
   padding: 3px;
 `;
 
 const Headline = styled.h1`
   color: #e6dacf;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   font-family: 'Dancing Script', cursive;
   padding-top: 5px;
   margin: 0;
-  position: fixed;
-  width: 100vw;
-  grid-column: span 9;
+  padding: 0;
+  grid-column: 1/10;
+  justify-content: center;
+  align-self: flex-end;
 `;

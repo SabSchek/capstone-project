@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { useRouter } from 'next/router.js';
 import { goods } from '../../data/filter.js';
 import HeaderNav from '../../Components/HeaderNav.js';

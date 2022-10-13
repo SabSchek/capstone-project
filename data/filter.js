@@ -21,7 +21,7 @@ export const goods = [
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/08/08214155-c8b9-4f5a-8a46-249e86a7cad4?rule=$_59.JPG',
     price: '150€',
-    category: 'Raeder',
+    category: 'Rad',
   },
   {
     name: 'Buch',
@@ -66,7 +66,7 @@ export const goods = [
   },
   {
     name: 'Sommerkleid',
-    id: '8',
+    id: '9',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: '15€',
@@ -75,7 +75,7 @@ export const goods = [
   },
   {
     name: 'Sommerkleid',
-    id: '8',
+    id: '10',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: '15€',
@@ -84,7 +84,7 @@ export const goods = [
   },
   {
     name: 'Sommerkleid',
-    id: '8',
+    id: '11',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: '15€',
@@ -93,7 +93,7 @@ export const goods = [
   },
   {
     name: 'Sommerkleid',
-    id: '8',
+    id: '12',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: '15€',
@@ -102,7 +102,7 @@ export const goods = [
   },
   {
     name: 'Sommerkleid',
-    id: '8',
+    id: '13',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: '15€',
@@ -111,7 +111,7 @@ export const goods = [
   },
   {
     name: 'Sommerkleid',
-    id: '8',
+    id: '14',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: '15€',

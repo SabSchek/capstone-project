@@ -9,3 +9,7 @@ export default function Layout({ children }) {
     </>
   );
 }
+
+const Main = styled.main`
+  margin-top: 116px;
+`;
