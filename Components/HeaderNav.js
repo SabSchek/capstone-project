@@ -41,7 +41,12 @@ export default function HeaderNav() {
 const HeaderundNav = styled.div`
   z-index: 1;
   height: 120 px;
-  background-color: #374c68;
+  background: radial-gradient(
+    circle,
+    rgba(109, 108, 125, 1) 4%,
+    rgba(55, 76, 104, 1) 51%,
+    rgba(9, 86, 102, 1) 100%
+  );
   width: 100%;
   font-size: 16px;
   display: grid;

@@ -11,17 +11,14 @@ function Home() {
       <UlContainer>
         {goods.map((good) => {
           return (
-            <DivFrame key={good.id}>
-              <ItemFrame
-                key={good.id}
-                name={good.name}
-                price={good.price}
-                id={good.id}
-              />
-              <ImageStyle>
-                <Image alt="Produkt" src={good.images} width={60} height={70} />
-              </ImageStyle>
-            </DivFrame>
+            /*   <DivFrame key={good.id}> */
+            <ItemFrame
+              key={good.id}
+              name={good.name}
+              price={good.price}
+              id={good.id}
+              imgSrc={good.images}
+            />
           );
         })}
       </UlContainer>
@@ -36,33 +33,16 @@ const AppBody = styled.div`
   padding: 0;
   width: 100vw;
   height: 100vh;
+  text-align: center;
 `;
 
-const UlContainer = styled.ul`
+const UlContainer = styled.div`
   display: grid;
+
+  gap: 1rem;
+  margin-top: 8rem;
   grid-template-columns: 1fr 1fr;
   list-style: none;
   text-align: center;
   gap: 5px;
-`;
-
-const DivFrame = styled.div`
-  display: flex;
-  border: solid white;
-  background-color: white;
-  box-shadow: grey;
-  height: 10vh;
-  width: 30vw;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 2px 2px 2px 2px violet;
-  justify-self: center;
-  margin: 10px;
-`;
-
-const ImageStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
 `;

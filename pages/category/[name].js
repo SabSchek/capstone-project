@@ -2,15 +2,16 @@ import styled from 'styled-components';
 import { useRouter } from 'next/router.js';
 import { goods } from '../../data/filter.js';
 import HeaderNav from '../../Components/HeaderNav.js';
+import ItemFrame from '../../Components/ItemFrame.js';
 
 export const categoryList = [
   { name: 'Kleidung', id: 'kleidung' },
   { name: 'Auto', id: 'auto' },
   { name: 'Rad', id: 'rad' },
-  { name: 'Tiere', id: 'tierchen' },
-  { name: 'Media', id: 'multimedia' },
+  { name: 'Tiere', id: 'tiere' },
+  { name: 'Media', id: 'media' },
   { name: 'Home', id: 'home' },
-  { name: 'Bücher', id: 'buecher' },
+  { name: 'Bücher', id: 'bücher' },
 ];
 
 export default function DetailPage() {
@@ -23,9 +24,17 @@ export default function DetailPage() {
     <AppBody>
       <HeaderNav />
       <h2>{name}</h2>
-      {filteredGoods.map((good) => {
-        return <p key={good.id}>{good.name}</p>;
-      })}
+      <ArticleWrapper>
+        {filteredGoods.map((good) => (
+          <ItemFrame
+            key={good.id}
+            name={good.name}
+            price={good.price}
+            id={good.id}
+            imgSrc={good.images}
+          />
+        ))}
+      </ArticleWrapper>
     </AppBody>
   );
 }
@@ -35,4 +44,9 @@ const AppBody = styled.div`
   padding: 0;
   width: 100vw;
   height: 100vh;
+`;
+
+const ArticleWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
