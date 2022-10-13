@@ -27,7 +27,7 @@ export default function ItemPage() {
         <p>{foundGood?.price}</p>
       </PageItemFrame>
       <ButtonContainer>
-        <ButtonNextStep>next</ButtonNextStep>
+        <ButtonNextStep>get it</ButtonNextStep>
       </ButtonContainer>
     </AppBody>
   );
@@ -36,15 +36,15 @@ export default function ItemPage() {
 const PageItemFrame = styled.div`
   display: grid;
   place-content: center;
-  background-color: lightgray;
+  background-color: whitesmoke;
   text-align: center;
 `;
 
 const ImageDiv = styled.div`
   height: auto;
-  width: 30vw;
+  width: 60vw;
   justify-content: center;
-  border-style: dotted;
+  border-style: ridge;
 `;
 
 const AppBody = styled.div`
@@ -58,8 +58,8 @@ const AppBody = styled.div`
 const ButtonNextStep = styled.button`
   height: 2rem;
   padding: 0 3rem;
-  border-color: grey;
-  border-radius: 0mm;
+  border-color: whitesmoke;
+  border-radius: 1rem;
   color: #596f80;
 `;
 

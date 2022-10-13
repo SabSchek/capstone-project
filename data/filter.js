@@ -48,7 +48,7 @@ export const goods = [
     category: 'Home',
   },
   {
-    name: 'Alessi Wasserkessel Wasserkocher',
+    name: 'Alessi Wasserkocher',
     id: '7',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/f9/f9b8de9f-9746-4ec0-90be-2c0180060e79?rule=$_59.JPG',
@@ -83,7 +83,7 @@ export const goods = [
     category: 'Kleidung',
   },
   {
-    name: 'Reise zum Mittelpunkt der Erde',
+    name: 'Reise zum Mittel...',
     id: '11',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/b5/b5dc3bf3-3281-4109-b6d5-d5fdf53792a0?rule=$_35.JPG',

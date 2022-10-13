@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import HeaderNav from './HeaderNav';
 
 export default function Layout({ children }) {
   return (
@@ -10,5 +9,6 @@ export default function Layout({ children }) {
 }
 
 const Main = styled.main`
-  margin-top: 116px;
+  margin-top: 120px;
+  text-align: center;
 `;

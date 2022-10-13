@@ -90,7 +90,7 @@ const CatLink = styled.a`
 `;
 
 const Headline = styled.h1`
-  color: #e6dacf;
+  color: whitesmoke;
   font-size: 40px;
   text-align: center;
   font-family: 'Dancing Script', cursive;
@@ -98,6 +98,5 @@ const Headline = styled.h1`
   margin: 0;
   padding: 0;
   grid-column: 1/10;
-  justify-content: center;
   align-self: flex-end;
 `;

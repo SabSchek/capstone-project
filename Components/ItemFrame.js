@@ -31,13 +31,12 @@ const Container = styled.div`
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
-  box-shadow: 2px 2px 2px 2px violet;
+  box-shadow: 2px 5px 5px 2px rosybrown;
   margin: 0.5rem 1rem;
-  text-align: center;
 `;
 
 const Title = styled.h6`
-  color: grey;
+  color: #628cc8;
   margin: 10px;
   padding-top: 3px;
   background-color: white;
@@ -50,18 +49,6 @@ const Price = styled.p`
   font-size: 12px;
   font-style: italic;
   color: green;
-`;
-
-const Button = styled.button`
-  display: flex;
-  box-shadow: 1px 2px 3px;
-  border-radius: 20px;
-  border-color: white;
-  font-size: 10px;
-  color: black;
-  background-color: lightgray;
-  border-style: dotted;
-  margin-left: 20px;
 `;
 
 const FrameList = styled.div`
