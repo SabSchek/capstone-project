@@ -11,22 +11,20 @@ export default function ItemPage() {
   const foundGood = goods.find((good) => good.id === id);
 
   return (
-    <>
+    <AppBody>
       <HeaderNav />
-      <AppBody>
-        <PageItemFrame>
-          <h2>{foundGood?.name}</h2>
-          <Image
-            alt=""
-            src={foundGood?.images}
-            layout="responsive"
-            width={20}
-            height={20}
-          />
-          <p>{foundGood?.price}</p>
-        </PageItemFrame>
-      </AppBody>
-    </>
+      <PageItemFrame>
+        <h2>{foundGood?.name}</h2>
+        <Image
+          alt=""
+          src={foundGood?.images}
+          layout="responsive"
+          width={20}
+          height={20}
+        />
+        <p>{foundGood?.price}</p>
+      </PageItemFrame>
+    </AppBody>
   );
 }
 

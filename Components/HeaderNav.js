@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BookMarkBlue from '../public/assets/BookMarkBlue.svg';
 
-const categoryList = [
+export const categoryList = [
   { name: 'Kleidung', id: 'kleidung' },
   { name: 'Auto', id: 'auto' },
   { name: 'Rad', id: 'raeder' },
@@ -41,12 +41,12 @@ export default function HeaderNav() {
 const HeaderundNav = styled.div`
   z-index: 1;
   height: 74px;
-  background-color: green;
+  background-color: #484154;
   width: 100%;
   font-size: 16px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
-  grid-template-rows: 2;
+  grid-template-rows: 4;
   padding-bottom: 4px;
   position: fixed;
   top: 0;
@@ -55,11 +55,11 @@ const HeaderundNav = styled.div`
 
 const DivContainer = styled.div`
   margin: 1px;
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
   width: 80px;
   height: 30px;
   height: 60px;
-  grid-row: 1 / 3;
+  grid-row: 2 / 4;
 `;
 
 const BookmarkContainer = styled.div`
@@ -67,7 +67,7 @@ const BookmarkContainer = styled.div`
   padding-top: 0.5rem;
   width: 80px;
   height: 45px;
-  grid-row: 1 / 3;
+  grid-row: 2 / 4;
   grid-column: 9;
 `;
 
@@ -81,6 +81,7 @@ const CatLink = styled.a`
   border-style: solid;
   margin: 5px;
   text-align: center;
+
   padding: 3px;
 `;
 
@@ -93,5 +94,5 @@ const Headline = styled.h1`
   margin: 0;
   position: fixed;
   width: 100vw;
-  grid-column: 9;
+  grid-column: span 9;
 `;

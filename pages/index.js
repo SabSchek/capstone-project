@@ -6,40 +6,32 @@ import HeaderNav from '../Components/HeaderNav';
 
 function Home() {
   return (
-    <>
+    <AppBody>
       <HeaderNav />
-      <AppBody>
-        <UlContainer>
-          {goods.map((good) => {
-            return (
-              <DivFrame key={good.id}>
-                <ItemFrame
-                  key={good.id}
-                  name={good.name}
-                  price={good.price}
-                  id={good.id}
-                />
-                <ImageStyle>
-                  <Image
-                    alt="Produkt"
-                    src={good.images}
-                    width={60}
-                    height={70}
-                  />
-                </ImageStyle>
-              </DivFrame>
-            );
-          })}
-        </UlContainer>
-      </AppBody>
-    </>
+      <UlContainer>
+        {goods.map((good) => {
+          return (
+            <DivFrame key={good.id}>
+              <ItemFrame
+                key={good.id}
+                name={good.name}
+                price={good.price}
+                id={good.id}
+              />
+              <ImageStyle>
+                <Image alt="Produkt" src={good.images} width={60} height={70} />
+              </ImageStyle>
+            </DivFrame>
+          );
+        })}
+      </UlContainer>
+    </AppBody>
   );
 }
 
 export default Home;
 
 const AppBody = styled.div`
-  background-color: #596f80;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -56,14 +48,16 @@ const UlContainer = styled.ul`
 
 const DivFrame = styled.div`
   display: flex;
-  border: solid coral;
+  border: solid white;
   background-color: white;
-  box-shadow: black;
-  height: 15vh;
-  width: 40vw;
+  box-shadow: grey;
+  height: 10vh;
+  width: 30vw;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  justify-self: left;
+  box-shadow: 2px 2px 2px 2px violet;
+  justify-self: center;
+  margin: 10px;
 `;
 
 const ImageStyle = styled.div`
