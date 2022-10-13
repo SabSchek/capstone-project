@@ -21,10 +21,10 @@ export const goods = [
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/08/08214155-c8b9-4f5a-8a46-249e86a7cad4?rule=$_59.JPG',
     price: '150€',
-    category: 'Raeder',
+    category: 'Rad',
   },
   {
-    name: 'Buch',
+    name: 'Puzzlebuch',
     id: '4',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/2f/2f54e674-140c-41d0-bace-352c9459d293?rule=$_59.JPG',
@@ -48,21 +48,75 @@ export const goods = [
     category: 'Home',
   },
   {
-    name: 'Autoradio',
+    name: 'Alessi Wasserkocher',
     id: '7',
     images:
-      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/fb/fb2d59c4-353d-4f3e-9fec-39da678b8bf4?rule=$_59.JPG',
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/f9/f9b8de9f-9746-4ec0-90be-2c0180060e79?rule=$_59.JPG',
     price: '40€',
-    category: 'Auto',
+    category: 'Home',
+  },
+  {
+    name: 'Kratzbaum',
+    id: '8',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/80/803ad247-59e7-426e-b7d9-0df79f8c464b?rule=$_35.JPG',
+    price: '15€',
+
+    category: 'Tiere',
   },
   {
     name: 'Sommerkleid',
-    id: '8',
+    id: '9',
     images:
       'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/c2/c2c208dd-8271-4a4e-83f1-91009e87a802?rule=$_35.JPG',
     price: '15€',
 
     category: 'Kleidung',
+  },
+  {
+    name: 'Damen Pullover',
+    id: '10',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/5c/5cadbd77-d612-4c68-8ac4-ae891e1933a5?rule=$_35.JPG',
+    price: '10€',
+
+    category: 'Kleidung',
+  },
+  {
+    name: 'Reise zum Mittel...',
+    id: '11',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/b5/b5dc3bf3-3281-4109-b6d5-d5fdf53792a0?rule=$_35.JPG',
+    price: '4€',
+
+    category: 'Bücher',
+  },
+  {
+    name: 'PS4',
+    id: '12',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/66/662370bc-1cd8-4021-a3dc-3b6b7d03d6a3?rule=$_35.JPG',
+    price: '200€',
+
+    category: 'Media',
+  },
+  {
+    name: 'Badregal',
+    id: '13',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/d4/d40450eb-8318-408d-9422-5f43b1960270?rule=$_35.JPG',
+    price: '18€',
+
+    category: 'Home',
+  },
+  {
+    name: 'Sport Lenkrad',
+    id: '14',
+    images:
+      'https://img.ebay-kleinanzeigen.de/api/v1/prod-ads/images/0d/0dab09f5-4fb0-4d3b-b168-3397a2eeabef?rule=$_35.JPG',
+    price: '350€',
+
+    category: 'Auto',
   },
 ];
 

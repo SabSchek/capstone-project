@@ -14,9 +14,10 @@ export const categoryList = [
   { name: 'Bücher', id: 'buecher' },
 ];
 
-export default function Categories() {
+export default function HeaderNav() {
   return (
-    <CatNav>
+    <HeaderundNav>
+      <Headline>Donatella</Headline>
       <Link href="/">
         <DivContainer>
           <Image src={Ellipse} width={60} height={80} />
@@ -25,36 +26,45 @@ export default function Categories() {
 
       {categoryList.map((categoryPoint) => (
         <p key={categoryPoint.id}>
-          <>
-            <Link href={`/category/${categoryPoint.name}`}>
-              <CatLink>{categoryPoint.name}</CatLink>
-            </Link>
-          </>
+          <Link href={`/category/${categoryPoint.name}`}>
+            <CatLink>{categoryPoint.name}</CatLink>
+          </Link>
         </p>
       ))}
       <BookmarkContainer>
         <Image src={BookMarkBlue} width={50} height={50} />
       </BookmarkContainer>
-    </CatNav>
+    </HeaderundNav>
   );
 }
-const CatNav = styled.nav`
+
+const HeaderundNav = styled.div`
+  z-index: 1;
+  height: 120 px;
+  background: radial-gradient(
+    circle,
+    rgba(109, 108, 125, 1) 4%,
+    rgba(55, 76, 104, 1) 51%,
+    rgba(9, 86, 102, 1) 100%
+  );
+  width: 100%;
   font-size: 16px;
-  display: flex;
-  flex-direction: row;
-  background-color: #8d8080;
-  height: 38px;
-  max-width: 375px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 60% 40%;
   padding-bottom: 4px;
+  position: fixed;
+  top: 0;
+  align-content: center;
 `;
 
 const DivContainer = styled.div`
   margin: 1px;
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
   width: 80px;
   height: 30px;
-  display: flex;
   height: 60px;
+  grid-row: 2 / 4;
 `;
 
 const BookmarkContainer = styled.div`
@@ -62,7 +72,8 @@ const BookmarkContainer = styled.div`
   padding-top: 0.5rem;
   width: 80px;
   height: 45px;
-  display: flex;
+  grid-row: 2 / 3;
+  grid-column: 9;
 `;
 
 const CatLink = styled.a`
@@ -76,4 +87,16 @@ const CatLink = styled.a`
   margin: 5px;
   text-align: center;
   padding: 3px;
+`;
+
+const Headline = styled.h1`
+  color: whitesmoke;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 5px;
+  margin: 0;
+  padding: 0;
+  grid-column: 1/10;
+  align-self: flex-end;
 `;

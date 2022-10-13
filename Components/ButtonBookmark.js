@@ -29,4 +29,5 @@ const Bookmark = styled.button`
   border-style: none;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 `;
